@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  /* Color Palette Tokens (Calibrated to Golfngv Reference) */
+  --color-bg-page: #F6F6F7;
+  --color-surface: #FFFFFF;
+  --color-surface-subtle: #F7F8F5;
+  --color-surface-dark: #222520;
+  --color-surface-dark-card: #1F231E;
+
+  --color-text-primary: #151B0A;
+  --color-text-secondary: #66695E;
+  --color-text-muted: #83855E;
+  --color-text-on-dark: #FFFFFF;
+  --color-text-on-dark-muted: rgba(255, 255, 255, 0.72);
+
+  --color-deep-green: #344810;
+  --color-muted-olive: #83855E;
+  --color-neutral-gray: #B2BBC6;
+
+  --color-lime-accent: #B8D85A;
+  --color-lime-solid: #A4C94D;
+  --color-lime-soft: #EBF4CE;
+  --color-border-subtle: #EAECE7;
+
+  /* Layout & Container Tokens */
+  --container-desktop: 1280px;
+  --viewport-desktop: 1440px;
+  --viewport-mobile: 390px;
+  --page-padding-desktop: 32px;
+  --page-padding-mobile: 16px;
+  --section-spacing-desktop: 72px;
+  --section-spacing-mobile: 48px;
+
+  /* Border Radius Tokens */
+  --radius-hero: 24px;
+  --radius-card-lg: 20px;
+  --radius-card-md: 16px;
+  --radius-card-sm: 12px;
+  --radius-pill: 9999px;
+}
+
+@theme inline {
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+
+  --color-golf-bg: var(--color-bg-page);
+  --color-golf-surface: var(--color-surface);
+  --color-golf-surface-subtle: var(--color-surface-subtle);
+  --color-golf-dark: var(--color-surface-dark);
+  --color-golf-dark-card: var(--color-surface-dark-card);
+  --color-golf-primary: var(--color-text-primary);
+  --color-golf-secondary: var(--color-text-secondary);
+  --color-golf-deep-green: var(--color-deep-green);
+  --color-golf-olive: var(--color-muted-olive);
+  --color-golf-gray: var(--color-neutral-gray);
+  --color-golf-lime: var(--color-lime-accent);
+  --color-golf-lime-solid: var(--color-lime-solid);
+  --color-golf-lime-soft: var(--color-lime-soft);
+  --color-golf-border: var(--color-border-subtle);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-surface);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    overflow-x: hidden;
+  }
+}

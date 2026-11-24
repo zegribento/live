@@ -1,0 +1,6 @@
+{
+  "name": "Golfngv — Championship Golf Club & Academy",
+  "description": "A premier golfing destination featuring championship fairways, professional coaching, golf academy programs, and world-class club amenities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
